@@ -441,6 +441,8 @@ Error message and password prompt
 
 <li>Changing serialized values with a script</li>
 
+<li>Check the container's IP address</li>
+
 <li>Checkout previous branch</li>
 
 <li>Convert several images to one atlas</li>
@@ -9815,7 +9817,7 @@ Error message and password prompt
 <div created="20191022102052289" modified="20191022105437995" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Themes</pre>
 </div>
-<div created="20191022100847136" modified="20210313102950591" title="$:/state/tab-1749438307">
+<div created="20191022100847136" modified="20230807180610853" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20191022101053744" modified="20200730102045936" title="$:/state/tab-2065006209">
@@ -9824,7 +9826,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20230511205424569" list="$:/ControlPanel Hello!" modified="20230511205424569" title="$:/StoryList">
+<div created="20230807180500581" list="$:/ControlPanel [[Check the container's IP address]] [[Convert several images to one atlas]]" modified="20230807180607974" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10833,6 +10835,11 @@ so.ApplyModifiedProperties();
 ```
 
 To see a property's name, use //Shift+RMB -&gt; Print Property Path// on it in Inspector.</pre>
+</div>
+<div created="20230807180505585" modified="20230807180600454" tags="docker tip shell" title="Check the container's IP address">
+<pre>```
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' &lt;container-name&gt;
+```</pre>
 </div>
 <div created="20210313110452104" modified="20210313110546504" tags="tip git" title="Checkout previous branch">
 <pre>`git checkout -` can be used to return to the previous branch the same way `cd -` works.</pre>
