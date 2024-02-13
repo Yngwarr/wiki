@@ -489,6 +489,8 @@ Error message and password prompt
 
 <li>Shell Tips</li>
 
+<li>Show side-by-side diff</li>
+
 <li>Simulating depth</li>
 
 <li>Slightly altering material properties</li>
@@ -9826,7 +9828,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20230807180500581" list="$:/ControlPanel [[Check the container's IP address]] [[Convert several images to one atlas]]" modified="20230807180607974" title="$:/StoryList">
+<div created="20240213161940026" list="[[Show side-by-side diff]] [[Check the container's IP address]]" modified="20240213162202179" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10836,7 +10838,7 @@ so.ApplyModifiedProperties();
 
 To see a property's name, use //Shift+RMB -&gt; Print Property Path// on it in Inspector.</pre>
 </div>
-<div created="20230807180505585" modified="20230807180600454" tags="docker tip shell" title="Check the container's IP address">
+<div created="20230807180505585" modified="20240213162628449" tags="docker tip shell" title="Check the container's IP address">
 <pre>```
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' &lt;container-name&gt;
 ```</pre>
@@ -11039,6 +11041,11 @@ Locally: `git branch -d &lt;branch_name&gt;`</pre>
 External links:
 
 {{Shell Links}}</pre>
+</div>
+<div created="20240213162205230" modified="20240213162626413" tags="tip shell" title="Show side-by-side diff">
+<pre>```
+diff -y file1 file2
+```</pre>
 </div>
 <div created="20200801083147740" modified="20200801083735361" tags="tip code godot" title="Simulating depth" type="text/vnd.tiddlywiki" url="https://youtu.be/UfKMgHbaGow?t=714">
 <pre>Just put your nodes into a ''YSort'' node and it will sort them relative to their (0, 0) point.</pre>
